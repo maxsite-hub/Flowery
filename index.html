@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=480" />
+    <title>FLOWERY</title>
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <script type="text/javascript">
+      function date() {
+        var d = new Date();
+        var month_num = d.getMonth();
+        var day = d.getDate();
+        month = new Array(
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12"
+        );
+
+        if (day <= 9) day = "0" + day;
+
+        date_date =
+          "" +
+          day +
+          "." +
+          month[month_num] +
+          "." +
+          d.getFullYear();
+        if (document.layers) {
+          document.layers.doc_date.document.write(date_date);
+          document.layers.doc_date.document.close();
+        } else document.getElementById("doc_date").innerHTML = date_date;
+       
+      }
+    </script>
+  </head>
+  <body>
+    <main>
+      <section class="s1">
+      
+
+        <div class="s1-title">
+          <div class="s1-suptitle">
+            <img src="img/icon-s1-header.png" alt="" />
+            <span class="s1-title-bottom"> УМНАЯ СВЕТОДИОДНАЯ ЛАМПА </span>
+          </div>
+          <h1>УПРАВЛЯЙ ОСВЕЩЕНИЕМ СО СВОЕГО СМАРТФОНА!</h1>
+        </div>
+        <div class="container">
+          <div class="s1-list">
+            <div class="s1-list-item">
+              <img src="img/s1-1.png" alt="" />
+              <p>Создаст атмосферу под ваше настроение</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-2.png" alt="" />
+              <p>Подходит к любому интерьеру</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-3.png" alt="" />
+              <p>Дарит положительные эмоции</p>
+            </div>
+          </div>
+        </div>
+        <div class="s1-discount">
+          <div class="container">
+            <div class="s1-discount-text">
+              <p class="s1-9">9</p>
+              <p>ОСТАЛОСЬ ЛАМП ПО АКЦИИ!</p>
+            </div>
+            <div class="s1-discount-circle">
+              <div class="s1-discount-circle-text">
+                <p>50<span class="procent">%</span></p>
+                <span>скидка</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form method="post" class="form-block-item">
+          <div class="form-item">
+            <select name="country" class="countryselect form-control location">
+              <option selecte value="">Страна</option>
+
+              <option selecte value="RU">Россия</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <input
+              type="text"
+              name="name"
+              class="field form-control userneme"
+              placeholder="Имя"
+              value=""
+            />
+          </div>
+          <div class="form-item">
+            <input
+              type="text"
+              name="phone"
+              class="field form-control phone"
+              placeholder="Телефон"
+              value=""
+            />
+          </div>
+
+          <input
+            type="hidden"
+            name="productsum"
+            class="productsum"
+            value="1 руб."
+          />
+          <input type="hidden" name="delivery" value="0 руб." />
+          <input
+            type="hidden"
+            name="totalsum"
+            class="productsum"
+            value="1 руб."
+          />
+          <input type="hidden" name="user" value="1" />
+          <input type="hidden" name="address" value="Уточнить у покупателя" />
+
+          <div class="form-wrapper">
+            <div class="container">
+              <div class="price">
+                <div class="price-old">
+                  <!-- <div>Обычная цена:</div> -->
+                  <div class="price-old-val oldproductsum">1000 ₽</div>
+                </div>
+                <div class="price-new">
+                  <div>500 ₽</div>
+                  <span class="price-new-val productsum"></span>
+                </div>
+              </div>
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  id="scroll-top"
+                >
+                  Заказать сейчас
+                </button>
+              </div>
+            </div>
+            <div class="timer">
+              <div class="timer-title">ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</div>
+              <div class="countbox"></div>
+              <div class="timer-body">
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Часов</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Минут</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Секунд</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-privacy-policy">Политика конфиденциальности</div>
+          </div>
+        </form>
+        <img src="img/gif.png" alt="">
+      </section>
+
+      <section class="s2">
+        
+        <div class="container">
+          <h2>
+            <span class="color-pink">ГДЕ</span>
+
+            МОЖНО ИСПОЛЬЗОВАТЬ?
+          </h2>
+        </div>
+        <div class="s2-list">
+          <div class="s2-list-item">
+            <img src="img/s2-1.png" alt="" />
+            <p>ИНТЕРЬЕР</p>
+          </div>
+          <div class="s2-list-item">
+            <img src="img/s2-2.png" alt="" />
+            <p>ЭКСТЕРЬЕР</p>
+          </div>
+          <div class="s2-list-item">
+            <img src="img/s2-3.png" alt="" />
+
+            <p>ВЕЧЕРИНКИ</p>
+          </div>
+          <div class="s2-list-item">
+            <img src="img/s2-4.png" alt="" />
+            <p>ДАЧА</p>
+          </div>
+          <div class="s2-list-item">
+            <img src="img/s2-5.png" alt="" />
+            <p>ЛЕТНЯЯ ВЕРАНДА</p>
+          </div>
+          <div class="s2-list-item">
+            <img src="img/s2-6.png" alt="" />
+            <p>КАФЕ И РЕСТОРАНЫ</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s3">
+        <div class="container">
+          <h2><span class="color-pink">ФОТО </span> ОТ ПОКУПАТЕЛЕЙ</h2>
+        </div>
+        <div class="s3-slide">
+          <div class="s3-slide-list">
+            <img src="img/s3-1.jpg" alt="" />
+          </div>
+          <div class="s3-slide-list">
+            <img src="img/s3-1.jpg" alt="" />
+          </div>
+          <div class="s3-slide-list">
+            <img src="img/s3-1.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="s4">
+        <h2>
+          <span class="color-pink">ПОСМОТРИТЕ </span>
+          <br />
+          КОРОТКОЕ ВИДЕО!
+        </h2>
+        <iframe
+          width="480"
+          height="315"
+          src="https://www.youtube.com/embed/23Bk3LTKK4E?start=12"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section class="s5">
+        <h2>
+          ВСЕ
+          <span class="color-pink">СОВРЕМЕННЫЕ</span>
+          ФУНКЦИИ!
+        </h2>
+
+        <div class="s5-list">
+          <div class="s5-list-item">
+            <div class="s5-item-img">
+              <img src="img/s5-1.png" alt="" />
+            </div>
+            <p>
+              Дистанционное<br />
+              управление <br />со смартфона
+            </p>
+          </div>
+          <div class="s5-list-item">
+            <div class="s5-item-img">
+              <img src="img/s5-2.png" alt="" />
+            </div>
+            <p>
+              Индивидуальная настройка освещения или выбор из готовых решений
+            </p>
+          </div>
+          <div class="s5-list-item">
+            <div class="s5-item-img">
+              <img src="img/s5-3.png" alt="" />
+            </div>
+            <p>Работа <br />по таймеру</p>
+          </div>
+          <div class="s5-list-item">
+            <div class="s5-item-img">
+              <img src="img/s5-4.png" alt="" />
+            </div>
+            <p>Синхронизация <br />с музыкой</p>
+          </div>
+        </div>
+
+    
+      </section>
+
+      <section class="s6">
+        <h2>
+          ВСЯ НАСТРОЙКА <br />В ОДНОМ
+          <span class="color-pink">ПРИЛОЖЕНИИ!</span>
+        </h2>
+        <img src="img/s6-bg.jpg" alt="" />
+
+        <div class="container">
+          <h2><span class="color-pink">БЕСПЛАТНО</span> ДЛЯ ЗАГРУЗКИ!</h2>
+          <ul class="s6-list">
+            <li>Управление по Bluetooth</li>
+            <li>Поддержка голосового управления на русском языке</li>
+            <li>
+              Для приложения Android можно одновременно управлять 4 лампами на
+              светильник
+            </li>
+            <li>
+              Для Apple приложение контролирует до 6 ламп на светильник
+              одновременно
+            </li>
+            <li>20 готовых динамических моделей</li>
+            <li>16 миллионов цветов</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="s7">
+        <h2>
+          ОСОБЕННОСТИ <br />SMART-ЛАМПЫ
+          <span class="color-pink">FLOWERY</span>
+        </h2>
+
+        <div class="container">
+          <div class="s7-item">
+            <div class="s7-item-list">
+              <img src="img/s7-1.png" alt="" />
+              <p>Антимоскитная система</p>
+              <img src="img/icon-s7-true.png" alt="" />
+            </div>
+            <div class="s7-item-list">
+              <img src="img/s7-2.png" alt="" />
+              <p>Защита от дождя</p>
+              <img src="img/icon-s7-true.png" alt="" />
+            </div>
+            <div class="s7-item-list">
+              <img src="img/s7-3.png" alt="" />
+              <p>Защита от пыли</p>
+              <img src="img/icon-s7-true.png" alt="" />
+            </div>
+            <div class="s7-item-list">
+              <img src="img/s7-4.png" alt="" />
+              <p>Быстрое остывание</p>
+              <img src="img/icon-s7-true.png" alt="" />
+            </div>
+            <div class="s7-item-list">
+              <img src="img/s7-5.png" alt="" />
+              <p>Срок службы более 10 лет!</p>
+              <img src="img/icon-s7-true.png" alt="" />
+            </div>
+          </div>
+          <div class="container">
+            <button type="submit" class="form-btn mm_button" id="scroll-middle">
+              Заказать сейчас
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="s8">
+        <div class="container">
+          <h2>
+            технические<br />
+            <span class="color-pink">характеристики</span>
+          </h2>
+        </div>
+        <div class="s8-list">
+          <table cellpadding="10">
+            <tr>
+              <td><b>Тип:</b></td>
+              <td>светодиодная Bluetooth лампочка</td>
+            </tr>
+            <tr>
+              <td><b>Материал:</b></td>
+              <td>авиационный алюминий, пластик</td>
+            </tr>
+            <tr>
+              <td><b>Количество:</b></td>
+              <td>1 шт.</td>
+            </tr>
+            <tr>
+              <td><b>Цвет изделия:</b></td>
+              <td>белый</td>
+            </tr>
+            <tr>
+              <td><b>Функция:</b></td>
+              <td>управление Bluetooth</td>
+            </tr>
+            <tr>
+              <td><b>Светильник:</b></td>
+              <td>RGB + теплый белый/RGB + холодный белый</td>
+            </tr>
+            <tr>
+              <td><b>Тип разъёма:</b></td>
+              <td>У27/В22</td>
+            </tr>
+            <tr>
+              <td><b>Мощность:</b></td>
+              <td>15 Вт</td>
+            </tr>
+            <tr>
+              <td><b>Напряжение:</b></td>
+              <td>85-265 В переменного тока</td>
+            </tr>
+            <tr>
+              <td><b>Чип:</b></td>
+              <td>светодиодный SMD</td>
+            </tr>
+            <tr>
+              <td><b>CRI:</b></td>
+              <td>>85</td>
+            </tr>
+            <tr>
+              <td><b>Люмен:</b></td>
+              <td>1275 лм</td>
+            </tr>
+            <tr>
+              <td><b>Срок службы:</b></td>
+              <td>>10</td>
+            </tr>
+            <tr>
+              <td><b>Цветовая температура:</b></td>
+              <td>теплый белый 2700К/холодный белый 5700К</td>
+            </tr>
+            <tr>
+              <td><b>Угол луча:</b></td>
+              <td>270 градусов</td>
+            </tr>
+            <tr>
+              <td><b>Светодиодный шарик:</b></td>
+              <td>3*5050, 8*2835</td>
+            </tr>
+            <tr>
+              <td><b>Размер:</b></td>
+              <td>6*12,3 см/2,4*4,8 rrdquo (Д * В)</td>
+            </tr>
+            <tr>
+              <td><b>Вес нетто:</b></td>
+              <td>68 г/2,4 унции</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="s9">
+        <div class="container">
+          <div class="s9-item">
+            <div class="s9-item-left">
+              <div class="s9-item-left-title">
+                <span class="color-orange">FLOWERY<br /></span>SMART-ЛАМПА
+              </div>
+              <div class="s9-item-left-subtitle">
+                УЖЕ ЗАРЕКОМЕНДОВАЛА <br />СЕБЯ
+                <span class="color-orange">18</span> СТРАНАХ МИРА!
+              </div>
+            </div>
+            <div class="s9-item-right">
+              ТЕПЕРЬ И <br />
+              В РОССИИ!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s10">
+        <h2>
+          НАШ ТОВАР<br />
+          <span class="color-pink"> СЕРТИФИЦИРОВАН! </span>
+        </h2>
+
+        <div class="s10-item">
+          <div class="s10-item-list">
+            <img src="img/s10-1.jpg" alt="" />
+            <p>Сертефикат соответствия</p>
+          </div>
+          <div class="s10-item-list">
+            <img src="img/s10-2.jpg" alt="" />
+            <p>Сертефикат безопасности</p>
+          </div>
+          <div class="s10-item-list">
+            <img src="img/s10-3.jpg" alt="" />
+            <p>Гарантия производителя</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="s11">
+        <h2>
+          <span class="color-pink">ОСТЕРЕГАЙТЕСЬ <br />ПОДДЕЛОК!</span>
+        </h2>
+        <div class="s11-subtitle">
+          Оригинальную Smart-лампу FLOWERY можно приобрести только здесь, на
+          официальном сайте!
+        </div>
+      </section>
+
+      <section class="s12">
+        <h2>
+          К сожалению,
+          <span class="color-orange"> в связи с высоким спросом </span> мы
+          вынуждены ввести <span class="color-orange"> ограничение: </span>
+        </h2>
+        <div class="s12-subtitle">
+          не более <span class="color-orange">5</span> ламп в
+          <span class="color-orange">1</span> руки!
+        </div>
+        <div class="container">
+          <div class="s12-item">
+            <div class="s12-item-list">
+              <p>5</p>
+              <div class="s12-item-img"><img src="img/s12-1.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+
+        <form method="post" class="form-block-item">
+          <div class="timer-title" >
+            Акция действует <br />до
+            <span class="color-pink" id="doc_date"></span>
+           
+          </div>
+          <img class="s12-form-img" src="img/s12.png" alt="" />
+          <div class="form-wrapper">
+            <div class="container">
+              <div class="price-block">
+                <div class="price-text">Цена сегодня:</div>
+                <div class="price">
+                  <div class="price-old">
+                    <!-- <div>Обычная цена:</div> -->
+                    <div class="price-old-val oldproductsum">1000 ₽</div>
+                  </div>
+                  <div class="price-new">
+                    <span class="price-new-val productsum">500 ₽</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="timer">
+              <div class="countbox"></div>
+              <div class="timer-body">
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Часов</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Минут</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Секунд</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="reolader form-item">
+              <button  class="form-btn mm_button" id="scroll-footer">
+                Заказать сейчас
+              </button>
+            </div>
+          </div>
+
+          <div class="s1-discount">
+            <div class="container">
+              <div class="s1-discount-text">
+                <p class="s1-9">9</p>
+                <p>ОСТАЛОСЬ ЛАМП ПО АКЦИИ!</p>
+              </div>
+              <div class="s1-discount-circle">
+                <div class="s1-discount-circle-text">
+                  <p>50<span class="procent">%</span></p>
+                  <span>скидка</span>
+                </div>
+              </div>
+            </div>
+            <div class="s1-discount-footer">
+              ЦЕНА ДЕЙСТВУЕТ НА РАСПРОДАЖУ
+              <span class="color-orange">ЛИМИТИРОВАННОЙ ПАРТИИ</span> 500 ШТ.
+            </div>
+          </div>
+        </form>
+      </section>
+
+      <section class="reviews">
+        <h2>
+          Отзывы <br />
+          <span class="color-pink">покупателей</span>
+        </h2>
+        <div class="container">
+          <div class="reviews__slider">
+            <div class="reviews-block white-block">
+              <div class="name-block">
+                <img src="img/s13-icon-1.png" alt="" />
+                <div class="block-name">
+                  <div class="reviews-name-header">
+                    <p>Василий Невзоров</p>
+                    <img src="img/icon-quotes.png" alt="" />
+                  </div>
+                  <span>51 год. Белгород</span>
+                  <div class="reviews-stars">
+                    <img src="img/icon-stars.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <img class="reviews-img" src="img/s13-1.jpg" alt="" />
+
+              <p class="reviews-text">
+                Летом установил беседку на даче, думал чем освещать вечерами.
+                Тут с женой увидели вашу рекламу, и заказали. И, надо сказать,
+                не пожалели. Лампа почти не греется, что для деревянной
+                конструкции важно, не привлекает насекомых. Очень мало
+                потребляет энергии, да и от влаги защищена, как указывает
+                производитель. Для летних спокойных вечеров, шашлыков - самое
+                то. Да и под музыку можно включить, если до этого дойдет.
+                Спасибо!
+              </p>
+            </div>
+
+            <div class="reviews-block white-block">
+              <div class="name-block">
+                <img src="img/s13-icon-2.png" alt="" />
+                <div class="block-name">
+                  <div class="reviews-name-header">
+                    <p>Светлана Аршавина</p>
+                    <img src="img/icon-quotes.png" alt="" />
+                  </div>
+                  <span>25 лет. Уфа</span>
+                  <div class="reviews-stars">
+                    <img src="img/icon-stars.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <img class="reviews-img" src="img/s13-2.jpg" alt="" />
+
+              <p class="reviews-text">
+                Заказала лампы себе домой. У меня часто гости бывают. Очень
+                пригождаются, чтобы создать нужную атмосферу, да и детям забава.
+                И очень радует функция таймера, особенно сейчас, когда день
+                короткий. Звонит будильник и свет зажигается, какой захочешь.
+                Очень удобно и просто. Рекомендую!
+              </p>
+            </div>
+
+            <div class="reviews-block white-block">
+              <div class="name-block">
+                <img src="img/s13-icon-3.png" alt="" />
+                <div class="block-name">
+                  <div class="reviews-name-header">
+                    <p>Виктор Лебедев</p>
+                    <img src="img/icon-quotes.png" alt="" />
+                  </div>
+                  <span>31 год. Мурманск</span>
+                  <div class="reviews-stars">
+                    <img src="img/icon-stars.png" alt="" />
+                  </div>
+                </div>
+              </div>
+
+              <img class="reviews-img" src="img/s13-3.jpg" alt="" />
+
+              <p class="reviews-text">
+                У меня небольшой бар на 50 человек, когда встал вопрос
+                освещения, я, недолго думая, заказал ваши лампы и вот уже 2 года
+                работаю - не знаю бед. Управляется всё прямо из-за барной стойки
+                с телефона, очень просто и удобно можно менять режимы под
+                настроение или ситуацию и помещение прямо преображается под
+                шумную вечеринку: одно под медленные - танцы другое. Радует что
+                всё подтверждено сертификатами и работает как часы. Горячо
+                рекомендую!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pay">
+        <div class="container">
+          <h2>
+            <span class="color-pink">КАК ЗАКАЗАТЬ</span>
+
+            <br />
+            ТОВАР?
+          </h2>
+          <div class="pay-list">
+            <div class="pay-list-item">
+              <img src="img/s14-1.png" alt="" />
+
+              <p>
+                Оставьте заявку на заказ через форму ниже
+                <span>1</span>
+              </p>
+            </div>
+            <div class="pay-list-item">
+              <img src="img/s14-2.png" alt="" />
+
+              <p>Мы свяжемся с вами для подтверждения заказа <span>2</span></p>
+            </div>
+            <div class="pay-list-item">
+              <img src="img/s14-3.png" alt="" />
+
+              <p>
+                Через несколько дней мы доставим вам товар
+                <span>3</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s1">
+        
+
+        <div class="s1-title">
+          <div class="s1-suptitle">
+            <img src="img/icon-s1-header.png" alt="" />
+            <span class="s1-title-bottom"> УМНАЯ СВЕТОДИОДНАЯ ЛАМПА </span>
+          </div>
+          <h1>УПРАВЛЯЙ ОСВЕЩЕНИЕМ СО СВОЕГО СМАРТФОНА!</h1>
+        </div>
+        <div class="container">
+          <div class="s1-list">
+            <div class="s1-list-item">
+              <img src="img/s1-1.png" alt="" />
+              <p>Создаст атмосферу под ваше настроение</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-2.png" alt="" />
+              <p>Подходит к любому интерьеру</p>
+            </div>
+            <div class="s1-list-item">
+              <img src="img/s1-3.png" alt="" />
+              <p>Дарит положительные эмоции</p>
+            </div>
+          </div>
+        </div>
+        <div class="s1-discount">
+          <div class="container">
+            <div class="s1-discount-text">
+              <p class="s1-9">9</p>
+              <p>ОСТАЛОСЬ ЛАМП ПО АКЦИИ!</p>
+            </div>
+            <div class="s1-discount-circle">
+              <div class="s1-discount-circle-text">
+                <p>50<span class="procent">%</span></p>
+                <span>скидка</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form method="post" class="form-block-item form-top form-middle form-footer">
+          <div class="form-item">
+            <select name="country" class="countryselect form-control location">
+              <option selecte value="">Страна</option>
+
+              <option selecte value="RU">Россия</option>
+            </select>
+          </div>
+          <div class="form-item">
+            <input
+              type="text"
+              name="name"
+              class="field form-control userneme"
+              placeholder="Имя"
+              value=""
+            />
+          </div>
+          <div class="form-item">
+            <input
+              type="text"
+              name="phone"
+              class="field form-control phone"
+              placeholder="Телефон"
+              value=""
+            />
+          </div>
+
+          <input
+            type="hidden"
+            name="productsum"
+            class="productsum"
+            value="1 руб."
+          />
+          <input type="hidden" name="delivery" value="0 руб." />
+          <input
+            type="hidden"
+            name="totalsum"
+            class="productsum"
+            value="1 руб."
+          />
+          <input type="hidden" name="user" value="1" />
+          <input type="hidden" name="address" value="Уточнить у покупателя" />
+
+          <div class="form-wrapper">
+            <div class="container">
+              <div class="price">
+                <div class="price-old">
+                  <!-- <div>Обычная цена:</div> -->
+                  <div class="price-old-val oldproductsum">1000 ₽</div>
+                </div>
+                <div class="price-new">
+                  <div>500 ₽</div>
+                  <span class="price-new-val productsum"></span>
+                </div>
+              </div>
+
+              <div class="reolader form-item">
+                <button
+                  type="submit"
+                  class="form-btn mm_button"
+                  id="scroll-top"
+                >
+                  Заказать сейчас
+                </button>
+              </div>
+            </div>
+            <div class="timer">
+              <div class="timer-title">ДО ОКОНЧАНИЯ АКЦИИ ОСТАЛОСЬ:</div>
+              <div class="countbox"></div>
+              <div class="timer-body">
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Часов</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Минут</div>
+                </div>
+                <div class="timer-separate"></div>
+                <div class="timer-item">
+                  <div class="timer-val">
+                    <div class="timer-num">0</div>
+                    <div class="timer-num">0</div>
+                  </div>
+                  <div class="timer-name">Секунд</div>
+                </div>
+              </div>
+            </div>
+            <div class="form-privacy-policy">Политика конфиденциальности</div>
+          </div>
+        </form>
+      </section>
+    </main>
+    <script type="text/javascript">
+      date();
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+      $(function () {
+        CountBox();
+        $(".slider-arrows").html("");
+
+        $(".scroll-to").click(function () {
+          var scrollElem = $(this).attr("href");
+          scrollTo(scrollElem);
+          return false;
+        });
+
+        $("#scroll-top").click(function (event) {
+          event.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $(".form-top").offset().top,
+            },
+            4000
+          );
+        });
+
+        $("#scroll-middle").click(function (event) {
+          event.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $(".form-middle").offset().top,
+            },
+            3000
+          );
+        });
+
+        $("#scroll-footer").click(function (event) {
+          event.preventDefault();
+          $("html, body").animate(
+            {
+              scrollTop: $(".form-footer").offset().top,
+            },
+            2000
+          );
+        });
+
+        $(".s3-slide").slick({
+          dotsClass: "header-dots",
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-reviews_left-pink" <img src="img/icon-arrow-left.png" alt="">',
+          nextArrow:
+            '<img class="slider-reviews_right-pink" src="img/icon-arrow-right.png" alt="">',
+        });
+        $(".reviews__slider").slick({
+          dotsClass: "header-dots",
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+          prevArrow:
+            '<img class="slider-reviews_left"  src="img/BTN-arrow-left.png" alt="">',
+          nextArrow:
+            '<img class="slider-reviews_right" src="img/BTN-arrow-right.png" alt="">',
+        });
+      });
+    </script>
+  </body>
+</html>

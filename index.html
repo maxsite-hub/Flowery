@@ -12,18 +12,19 @@
         var month_num = d.getMonth();
         var day = d.getDate();
         month = new Array(
-          "1",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7",
-          "8",
-          "9",
-          "10",
-          "11",
-          "12"
+          "января",
+          "февраля",
+          "марта",
+          "апреля",
+          "мая",
+          "июня",
+
+          "июля",
+          "августа",
+          "сентября",
+          "октября",
+          "ноября",
+          "декабря"
         );
 
         if (day <= 9) day = "0" + day;
@@ -31,10 +32,9 @@
         date_date =
           "" +
           day +
-          "." +
+          "&nbsp;" +
           month[month_num] +
-          "." +
-          d.getFullYear();
+          "" ;
         if (document.layers) {
           document.layers.doc_date.document.write(date_date);
           document.layers.doc_date.document.close();
